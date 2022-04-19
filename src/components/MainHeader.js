@@ -20,7 +20,7 @@ const MainHeader = () => {
             <ul>
                 <li>
                     {/* React-Router-DOM-Link-Click-Prevent-HTTP-Request-To-Server */}
-                    <NavLink activeClassName={classes.active} to="/welcome">
+                    <NavLink className={(navData) => navData.isActive ? classes.active : ''} to="/welcome">
                         Welcome
                     </NavLink>
                 </li>
@@ -28,7 +28,7 @@ const MainHeader = () => {
                 <li>
                     {/* React-Router-DOM-Link-Click-Prevent-HTTP-Request-To-Server */}
                     {/* React-Router-Highlight-Link */}
-                    <NavLink activeClassName={classes.active} to="/products">
+                    <NavLink className={(navData) => navData.isActive ? classes.active : ''} to="/products">
                         Products
                     </NavLink>
                 </li>
