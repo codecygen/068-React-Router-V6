@@ -12,6 +12,8 @@ const Products = () => {
   // Methods to programmatically redirect links after form submission.
   // const navigate = useNavigate();
   // navigate('/welcome', {replace: true});
+  // This refreshes the current page
+  // navigate(0);
   // This goes one page before
   // navigate(-1);
   // This goes two pages before
